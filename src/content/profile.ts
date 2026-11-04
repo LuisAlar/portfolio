@@ -17,13 +17,30 @@ export const profile: Profile = {
   philosophy:
     "The best infrastructure is the kind nobody has to think about. If people can do their jobs without worrying about the systems underneath, the work is done.",
   avatar,
-  skills: ["TypeScript", "React", "Prisma", "PostgreSQL", "Node.js", "Zod"],
+  // Ordered platform/ops → automation → app stack, drawn from the experiences' techStack.
+  skills: [
+    "Docker",
+    "Linux",
+    "Bash",
+    "Python",
+    "CI/CD",
+    "AWS",
+    "Cloudflare",
+    "Power Automate",
+    "Copilot Studio",
+    "SharePoint",
+    "AI Agents",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "PostgreSQL",
+  ],
   currentlyLearning: ["AWS Lightsail", "Docker Automation", "Advanced Splay Trees"], // TODO(content): review
   interests: ["Platform Engineering", "Infrastructure & Reliability", "Operations Automation", "System Design"],
   links: {
     github: "https://github.com/luisAlar",
     linkedin: "https://linkedin.com/in/luis-alarcon",
-    instagram: "https://instagram.com/", // TODO(content): add your Instagram handle
+    instagram: "https://www.instagram.com/luz.altar/",
     // email: "", // TODO(content): DB had placeholder luis@example.com
   },
 };
