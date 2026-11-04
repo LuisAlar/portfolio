@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex - Luis Alarcon (AI Automation & Operations Focus)
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Luis Alarcon} \\ \vspace{1pt}
+    \small 936-828-9969 $|$ \href{mailto:alarconMandujanoLuis@gmail.com}{\underline{alarconMandujanoLuis@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/luis-alberto-alarcon-mandujano-68316b359}{\underline{linkedin}} $|$
+    \href{https://github.com/LuisAlar}{\underline{github}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Dallas, TX}
+      {Bachelor of Science in Software Engineering}{Expected Dec 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Indigo Magazine}{Dec 2023 -- Present}
+      {Web Development Lead \& Creative Director}{}
+      \resumeItemListStart
+        \resumeItem{Architected an automated media pipeline fetching assets from Box and deploying to a \textbf{Cloudflare CDN}, cutting static codebase bloat and accelerating asset delivery speeds.}
+        \resumeItem{Engineered an internal end-to-end publishing and article submission platform, replacing manual developer updates and empowering non-technical editorial staff to publish independently.}
+        \resumeItem{Built an agentic development harness equipped with custom skills and guardrails, enabling non-technical student contributors across \textbf{10+ web projects} to ship features using AI coding agents safely.}
+        \resumeItem{Established team AI governance and developer workflows, balancing agent-assisted development velocity with strict design standards to protect authentic artistic and editorial styling.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fujitsu $|$ 1Finity}{Jun 2026 -- Aug 2026}
+      {AI Workflow Automation Intern}{}
+      \resumeItemListStart
+        \resumeItem{Assessed enterprise AI capabilities across the \textbf{Microsoft AI suite} and \textbf{Copilot}, architecting headless automation pipelines integrated with existing \textbf{Salesforce} workflows and \textbf{Power BI} datasets.}
+        \resumeItem{Slashed weekly sales report compilation time from \textbf{3 hours to seconds} by engineering an automated document generation pipeline extracting regional updates directly from structured database records.}
+        \resumeItem{\textbf{Consulted} cross-functional internal teams on AI automation adoption, scoping automation roadmaps and building \textbf{Power Automate} workflows for structured data intake and compliance auditing.}
+        \resumeItem{Conducted discovery sessions with executive leadership and sales operations to evaluate AI workflow readiness, translating operational bottlenecks into technical specifications to drive voluntary adoption.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Radio UTD}{Aug 2026 -- Present}
+      {Systems Administrator}{}
+      \resumeItemListStart
+        \resumeItem{Administer station broadcast infrastructure and DJ music cataloging platforms, ensuring operational stability and continuous uptime for live daily radio broadcasts.}
+        \resumeItem{Engineer automated file ingestion and synchronization workflows integrating \textbf{Power Automate} and \textbf{Box} to streamline DJ track submissions and media processing.}
+        \resumeItem{Lead technical discovery and migration planning to transition legacy \textbf{Snowflake} catalog systems to a modernized, high-performance media management platform.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Orbital Mentorship}{Nov 2024 -- Jun 2026}
+      {DevOps Lead}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a \textbf{Docker-based} deployment and onboarding solution using automation scripts, standardizing environments and reducing configuration time by \textbf{50\%} while eliminating dependency errors.}
+        \resumeItem{Built an in-house API observability and monitoring tool to identify network bottlenecks, enabling continuous performance tracking and reducing per-page network requests from 20 to 1--2.}
+        \resumeItem{Architected a scalable backend data management system, optimizing querying and enabling high-performance CRUD operations for large operational datasets.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Xtensible Solutions}{Apr 2024 -- Aug 2024}
+      {Solutions Engineer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python automation scripts} to manage cloud instance creation, snapshot retrieval, and automated GitHub integration, significantly reducing manual deployment overhead.}
+        \resumeItem{Integrated automated API testing workflows for functional and regression testing, ensuring high reliability and stability of web services before production deployment.}
+        \resumeItem{Accelerated QA feedback loops and continuous integration processes by systematically identifying and reporting system defects to engineering leadership.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\newpage
+
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Obsidian Automated Expense Tracker} $|$ \emph{Power Automate, Obsidian, JavaScript, JSON}}{2026}
+      \resumeItemListStart
+        \resumeItem{Engineered an event-driven receipt ingestion pipeline using \textbf{Power Automate} to parse incoming email receipts into structured JSON schemas synced to a local vault.}
+        \resumeItem{Built a custom \textbf{Obsidian} dashboard widget to render dynamic weekly budget summaries and real-time spending analytics within daily operational notes.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AI Syllabus Task \& Schedule Automator} $|$ \emph{Google Gemini API, Google Apps Script, Workspace APIs}}{2026}
+      \resumeItemListStart
+        \resumeItem{Leveraged the \textbf{Google Gemini API} to parse unstructured course syllabi into structured assignment, deadline, and examination JSON schemas within Google Sheets.}
+        \resumeItem{Developed a \textbf{Google Apps Script} workflow to batch-generate and synchronize deliverables directly into \textbf{Google Calendar} and \textbf{Google Tasks} with automated reminders.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud \& DevOps:} Docker, AWS, Linux, Cloudflare CDN, CI/CD Principles, Git \\
+     \textbf{Automation \& AI Suites:} Microsoft Power Platform, Power Automate, Copilot Studio, Google Apps Script, Gemini API, Custom Connectors \\
+     \textbf{Programming \& Scripting:} Python, Java, JavaScript, TypeScript, Bash, SQL \\
+     \textbf{Frameworks \& Databases:} React, Node.js, Express, Prisma, MongoDB, SharePoint Lists, Power BI Datasets, Snowflake \\
+     \textbf{Operational \& Testing Tools:} Postman, Jira, Agile Workflow, Salesforce Integration, Box API \\
+     \textbf{Languages:} English, Spanish
+    }}
+ \end{itemize}
+
+\end{document}
