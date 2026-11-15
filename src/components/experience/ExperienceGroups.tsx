@@ -26,7 +26,7 @@ const PlusIcon = ({ open = false }: { open?: boolean }) => (
   </span>
 );
 
-// Each group heading carries a straight ember rule on its left and expands into a numbered table.
+// Each group heading carries a straight ember rule on its left and expands into a table of logo, name and role.
 export const ExperienceGroups = ({ groups }: ExperienceGroupsProps) => {
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
 
@@ -46,6 +46,8 @@ export const ExperienceGroups = ({ groups }: ExperienceGroupsProps) => {
           const panelId = `group-panel-${group.id}`;
           // Newest first ("YYYY-MM" strings sort lexically)
           const items = [...group.items].sort((a, b) => b.startDate.localeCompare(a.startDate));
+          // Only groups with logos get the left logo column, so text-only groups don't show empty slots.
+          const hasLogos = items.some((exp) => exp.logo);
 
           return (
             <li key={group.id}>
@@ -86,15 +88,31 @@ export const ExperienceGroups = ({ groups }: ExperienceGroupsProps) => {
                         <Link
                           to={`/experiences/${exp.id}`}
                           tabIndex={isOpen ? undefined : -1}
-                          className="group grid grid-cols-[2.5rem_1fr] md:grid-cols-[1fr_2fr_4fr] items-baseline gap-x-4 gap-y-1 py-4 md:py-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-ember/40"
+                          className={`group grid items-center gap-x-6 md:gap-x-10 gap-y-1 py-4 md:py-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-ember/40 ${
+                            hasLogos
+                              ? "grid-cols-[4.5rem_1fr] md:grid-cols-[8rem_minmax(0,1fr)_minmax(0,1.2fr)]"
+                              : "grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]"
+                          }`}
                         >
-                          <span className="text-xl md:text-2xl tabular-nums">{pad(i + 1)}</span>
+                          {hasLogos && (
+                            // bg-cream gives mix-blend-multiply a backdrop: the li's fade transition isolates it from the page,
+                            // and without one white logo backgrounds would show as white squares.
+                            <span className="row-span-2 md:row-span-1 flex items-center justify-center h-12 md:h-14 bg-cream">
+                              {exp.logo && (
+                                <img
+                                  src={exp.logo}
+                                  alt=""
+                                  loading="lazy"
+                                  decoding="async"
+                                  className="max-h-full max-w-full object-contain mix-blend-multiply"
+                                />
+                              )}
+                            </span>
+                          )}
                           <span className="text-xl md:text-2xl leading-tight transition-colors group-hover:text-ember">
                             {exp.organization}
                           </span>
-                          <span className="col-start-2 md:col-start-auto text-base md:text-xl leading-tight text-sage/70">
-                            {exp.roleTitle}
-                          </span>
+                          <span className="text-base md:text-xl leading-tight text-sage/70">{exp.roleTitle}</span>
                         </Link>
                       </li>
                     ))}

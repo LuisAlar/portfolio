@@ -20,7 +20,7 @@ export interface Experience {
   solutionDetails?: string;
   impactBullets: string[];
   techStack: string[];
-  /** Imported image URL; Timeline shows a placeholder square when missing */
+  /** Imported image URL; shown left of the row on the home page and beside the title on the detail page */
   logo?: string;
   links?: { label: string; url: string }[];
   /** Line under roleTitle on the detail page */

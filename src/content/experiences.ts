@@ -1,5 +1,10 @@
 import type { Experience } from "./types";
 import weeklyReportsSlide from "../assets/1finity-weekly-reports.webp";
+import radioUtdLogo from "../assets/radionewlogo.png";
+import oneFinityLogo from "../assets/1finitylogo.jpg";
+import orbitalLogo from "../assets/orbitalLogo.jpg";
+import xtensibleLogo from "../assets/Xtensible_logo.png";
+import indigoLogo from "../assets/indigologoblack.png";
 
 // Migrated from the yourOwn Postgres DB (session a2b428b1…), one variant per experience.
 // Alternate variants not used: Indigo "Product Focus", Orbital "Leadership Focus" — see docs/CONTEXT.md.
@@ -7,31 +12,89 @@ import weeklyReportsSlide from "../assets/1finity-weekly-reports.webp";
 export const experiences: Experience[] = [
   {
     id: "radio-utd",
-    type: "ORGANIZATION",
-    title: "Broadcast Infrastructure & Media Automation",
+    type: "WORK",
+    title: "Now-Playing API Caching",
     organization: "Radio UTD",
+    logo: radioUtdLogo,
     roleTitle: "Systems Administrator",
     startDate: "2026-08",
     isCurrent: true,
-    summaryShort: "Keeping a live student radio station on air while automating how music gets into it.",
+    summaryShort: "Fixed the now-playing API after its traffic got the station's site paused.",
+    // Story drafted from docs/radioUtdDocs (change log + Hobby readiness plan).
+    subtitle: "Keeping the station's live show data online",
     summaryLong:
-      "As Systems Administrator for Radio UTD, I run the broadcast infrastructure and DJ music cataloging platforms behind daily live shows. Alongside keeping the station stable, I'm automating how DJ tracks are submitted and processed, and leading the plan to move the station off its legacy Snowflake catalog.",
-    problemStatement:
-      "Track submissions relied on manual file handling, and the legacy Snowflake catalog system was holding back how the station manages its media library.",
-    solutionDetails:
-      "I built automated ingestion and sync workflows with Power Automate and Box, and I'm leading technical discovery and migration planning toward a modern, high-performance media management platform.",
+      "Radio UTD's website shows what's on air right now: the show, who's hosting it, and each song as it plays. In November that feed used up our hosting plan's limit and the site was paused. I found out why, fixed it, and set up tracking so we can tell when it's safe to go back to the free plan.",
     impactBullets: [
-      "Administer station broadcast infrastructure and DJ music cataloging platforms, ensuring operational stability and continuous uptime for live daily radio broadcasts.",
-      "Engineer automated file ingestion and synchronization workflows integrating Power Automate and Box to streamline DJ track submissions and media processing.",
-      "Lead technical discovery and migration planning to transition legacy Snowflake catalog systems to a modernized, high-performance media management platform.",
+      "Capped the current-show response at the 20 most recent songs, taking it from a playlist that grew past 10 KB during a show to under 1 KB.",
+      "Added CDN caching to the three public endpoints so listeners share one cached response instead of each one running the function.",
+      "Built a usage report on Vercel's billing API that compares our numbers to the free plan's limits, with a written rule for when to downgrade.",
     ],
-    techStack: ["Power Automate", "Box API", "Snowflake", "Systems Administration"],
+    techStack: ["Vercel", "Node.js", "MongoDB", "CDN Caching", "JavaScript"],
+    story: [
+      {
+        paragraphs: [
+          "Every song the station plays is logged to a small API on Vercel that stores it in MongoDB. The tuner page on our website asks that API what's playing: the current show, the DJ, and the songs so far. Every open tab asked every 15 to 30 seconds, including tabs left in the background, and none of the answers were cached.",
+        ],
+      },
+      {
+        heading: "What broke",
+        paragraphs: [
+          "In late October our usage jumped from almost nothing to as much as 2 GB a day. On November 3 the project went over the free Hobby plan's 10 GB limit for Fast Origin Transfer, the data our functions send back, and Vercel paused the site. We moved to the Pro plan to get back on air.",
+          "The dashboard showed two problems. Function runs almost matched requests, so about 99% of requests ran the code and hit the database. And the current-show endpoint sent back every song since the show started, so each response kept growing over a 3 to 4 hour show. At the October rate we were using about 280% of the limit.",
+        ],
+      },
+      {
+        heading: "The fix",
+        paragraphs: [
+          "On the server, I added cache headers to the three public endpoints so Vercel's CDN serves one copy to everyone for 15 to 60 seconds. Only successful responses are cached, so an error never gets stuck. I also capped the current-show response at the 20 most recent songs, so its size stays the same no matter how long the show runs. After the change it measured 937 bytes.",
+          "On the tuner page, polling stops while the tab is hidden, and I took out the action-link poll, which was about a quarter of all requests. I also fixed a bug where a failed request called a function that didn't exist.",
+        ],
+      },
+      {
+        heading: "A trade-off I chose",
+        paragraphs: [
+          "The API could already send only the songs after a given time. I chose not to use that. A CDN caches one response per exact URL, so if every listener sent their own timestamp, none of them would share a cached copy and every poll would reach the function again. The 20-song cap solved the growing-response problem while keeping one shared URL. The cost is that now-playing can lag a song change by up to about 45 seconds, which is fine for a radio show.",
+        ],
+      },
+      {
+        heading: "Proving it holds",
+        paragraphs: [
+          "I didn't want to downgrade on a guess. I wrote a Node script that pulls daily usage from Vercel's billing API and compares it to each Hobby limit, with before-and-after rates around the fix. We agreed on the rule ahead of time: go back to Hobby once a full 30 days after the fix stays under 70% of every limit, because going over pauses the site and there's no option to pay extra.",
+          "Transfer should drop to about 13% of the limit. The one I'm watching is Active CPU, which was the next limit we would have hit. If it stays high, the next step is longer cache times, which needs no change to the tuner.",
+        ],
+      },
+    ],
+    expandables: [
+      {
+        heading: "Also at the station",
+        items: [
+          {
+            title: "Broadcast and catalog systems",
+            body: "I administer the station's broadcast infrastructure and DJ music cataloging platforms that daily live shows depend on.",
+          },
+          {
+            title: "Track submission automation",
+            body: "I built file ingestion and sync workflows with Power Automate and Box so DJ track submissions no longer depend on manual file handling.",
+          },
+          {
+            title: "Catalog migration",
+            body: "I'm leading discovery and migration planning to move the station off its legacy Snowflake catalog system.",
+          },
+          {
+            title: "Security follow-ups",
+            body: "While fixing the API I flagged two risks: an environment file with database credentials committed to the repo's history, and endpoints that take passwords as URL parameters, which end up in the logs.",
+          },
+        ],
+        tags: ["Power Automate", "Box API", "Snowflake"],
+      },
+    ],
   },
   {
     id: "fujitsu-1finity",
     type: "WORK",
     title: "Enterprise AI Workflow Automation",
     organization: "Fujitsu | 1Finity",
+    logo: oneFinityLogo,
     roleTitle: "AI Workflow Automation Intern",
     startDate: "2026-06",
     endDate: "2026-08",
@@ -159,6 +222,7 @@ export const experiences: Experience[] = [
     type: "WORK",
     title: "Orbital Mentorship Platform",
     organization: "Orbital Mentorship",
+    logo: orbitalLogo,
     roleTitle: "DevOps Lead",
     startDate: "2024-11",
     endDate: "2026-06",
@@ -182,6 +246,7 @@ export const experiences: Experience[] = [
     type: "WORK",
     title: "Cloud Infrastructure Automation",
     organization: "Xtensible Solutions",
+    logo: xtensibleLogo,
     roleTitle: "Solutions Engineer Intern",
     startDate: "2024-04",
     endDate: "2024-08",
@@ -205,6 +270,7 @@ export const experiences: Experience[] = [
     type: "WORK",
     title: "Indigo Magazine Collective",
     organization: "Indigo Magazine",
+    logo: indigoLogo,
     roleTitle: "Web Development Lead & Creative Director",
     startDate: "2023-12",
     isCurrent: true,

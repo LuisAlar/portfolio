@@ -95,9 +95,10 @@
       {Radio UTD}{Aug 2026 -- Present}
       {Systems Administrator}{}
       \resumeItemListStart
-        \resumeItem{Administer station broadcast infrastructure and DJ music cataloging platforms, ensuring operational stability and continuous uptime for live daily radio broadcasts.}
-        \resumeItem{Engineer automated file ingestion and synchronization workflows integrating \textbf{Power Automate} and \textbf{Box} to streamline DJ track submissions and media processing.}
-        \resumeItem{Lead technical discovery and migration planning to transition legacy \textbf{Snowflake} catalog systems to a modernized, high-performance media management platform.}
+        \resumeItem{Built a \textbf{CDN caching layer} for the station's API after uncached traffic hit \textbf{280\%} of Vercel's free-tier limit and took the site offline, cutting projected server bandwidth by \textbf{95\%}.}
+        \resumeItem{Positioned the station to drop its \textbf{\$20/month} Vercel Pro plan by building a usage tracker that measures traffic against free-tier limits.}
+        \resumeItem{Reduced database queries per request from \textbf{52 to 3} on the live now-playing API by batching song lookups, lowering server load during broadcasts.}
+        \resumeItem{Lead migration planning for the station's legacy \textbf{Snowflake} music catalog, mapping data dependencies and risks for the move to a modern media platform.}
       \resumeItemListEnd
 
     \resumeSubheading

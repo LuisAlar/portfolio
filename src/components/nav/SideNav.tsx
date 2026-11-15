@@ -1,3 +1,4 @@
+import { useState, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 export interface NavTab {
@@ -11,17 +12,10 @@ export interface NavTab {
 const IDLE_STAR_COLOR = "#acc2a7";
 
 export const NAV_TABS: NavTab[] = [
-  // Experiences is hidden from nav for now (route still works); Photography took its slot.
-  // { label: "Experiences", to: "/experiences", starColor: "#acc2a7" },
+  // Experiences live on Home now (Work / Automations / Projects); detail pages stay at /experiences/:id.
   { label: "A Bit About Me!", to: "/about", starColor: "#E8B92F" },
   { label: "Photography", to: "/photography", starColor: "#8B1E2B" },
 ];
-
-interface SideNavProps {
-  tabs?: NavTab[];
-  /** Horizontal row for the mobile top bar */
-  orientation?: "vertical" | "horizontal";
-}
 
 // Same path as assets/starr.svg, inlined so the fill can change per tab while keeping its outline.
 const STAR_PATH =
@@ -33,31 +27,67 @@ const Star = ({ color, className }: { color: string; className: string }) => (
   </svg>
 );
 
-export const SideNav = ({ tabs = NAV_TABS, orientation = "vertical" }: SideNavProps) => {
+const isActive = (pathname: string, to: string) => pathname === to || pathname.startsWith(`${to}/`);
+
+interface StarHomeProps {
+  tabs?: NavTab[];
+  className?: string;
+}
+
+/** Star that links Home, tints to the active tab, hops on route change and spins when clicked. */
+export const StarHome = ({ tabs = NAV_TABS, className = "w-24 h-28" }: StarHomeProps) => {
   const { pathname } = useLocation();
-  const activeTab = tabs.find((t) => pathname === t.to || pathname.startsWith(`${t.to}/`));
-  const starColor = activeTab?.starColor ?? IDLE_STAR_COLOR;
-  const vertical = orientation === "vertical";
+  const [spinning, setSpinning] = useState(false);
+  const starColor = tabs.find((t) => isActive(pathname, t.to))?.starColor ?? IDLE_STAR_COLOR;
 
   return (
-    <nav className={vertical ? "w-full flex flex-col items-center gap-8 pt-4" : "w-full flex items-center justify-center gap-6 py-2"}>
-      {/* Star doubles as the Home link and the active-tab indicator */}
+    <Link to="/" aria-label="Home" onClick={() => setSpinning(true)} className="block">
       {/* key on pathname replays the hop each time the route changes */}
-      <Link key={pathname} to="/" aria-label="Home" className="block animate-star-hop">
-        <Star color={starColor} className={vertical ? "w-24 h-28" : "w-8 h-9"} />
-      </Link>
+      <Hop key={pathname} skip={spinning}>
+        <span
+          className={`block ${spinning ? "animate-star-spin" : ""}`}
+          onAnimationEnd={(e) => e.animationName === "star-spin" && setSpinning(false)}
+        >
+          <Star color={starColor} className={className} />
+        </span>
+      </Hop>
+    </Link>
+  );
+};
+
+/** Hops once on mount, unless the route change came from clicking the star (then it just spins). */
+const Hop = ({ skip, children }: { skip: boolean; children: ReactNode }) => {
+  const [hop] = useState(!skip); // decided at mount only, so ending the spin doesn't trigger a late hop
+  return <span className={`block ${hop ? "animate-star-hop" : ""}`}>{children}</span>;
+};
+
+interface SideNavProps {
+  tabs?: NavTab[];
+  /** Horizontal row for the mobile top bar */
+  orientation?: "vertical" | "horizontal";
+}
+
+export const SideNav = ({ tabs = NAV_TABS, orientation = "vertical" }: SideNavProps) => {
+  const vertical = orientation === "vertical";
+  const links = [{ label: "Home", to: "/" }, ...tabs];
+
+  return (
+    <nav className={vertical ? "w-full flex flex-col items-center gap-8" : "w-full flex items-center justify-center gap-6 py-2"}>
+      {/* On desktop the star lives in the sidebar header (see SiteShell); mobile keeps it inline */}
+      {!vertical && <StarHome tabs={tabs} className="w-8 h-9" />}
 
       <ul className={vertical ? "flex flex-col items-center gap-6" : "flex flex-row items-center gap-5"}>
-        {tabs.map((tab) => (
-          <li key={tab.to}>
+        {links.map((link) => (
+          <li key={link.to}>
             <NavLink
-              to={tab.to}
+              to={link.to}
+              end={link.to === "/"}
               className={`block text-center font-medium tracking-widest uppercase transition-colors duration-200 hover:text-[var(--nav-hover-color)] ${
                 vertical ? "text-base" : "text-sm"
               }`}
               style={{ color: "var(--nav-text-color)" }}
             >
-              {tab.label}
+              {link.label}
             </NavLink>
           </li>
         ))}

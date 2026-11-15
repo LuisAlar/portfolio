@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { profile } from "../../content/profile";
-import { SideNav } from "../nav/SideNav";
+import { SideNav, StarHome } from "../nav/SideNav";
 import { ProfileIdentity } from "../profile/ProfileIdentity";
 import { SocialLinks } from "../profile/SocialLinks";
 
@@ -15,11 +15,12 @@ export const SiteShell = () => (
 
     {/* Desktop sidebar */}
     <aside className="hidden md:flex w-80 shrink-0 h-full flex-col bg-cream p-6 gap-8 border-r border-sage-light/40">
+      {/* Star replaces the profile photo: links Home, tints per tab, spins on click */}
       <section className="flex items-center justify-center py-2">
-        <ProfileIdentity profile={profile} />
+        <StarHome />
       </section>
 
-      <div className="min-h-[200px] flex-grow flex items-start border-t border-sage-light/30">
+      <div className="min-h-[200px] flex-grow flex items-center border-t border-sage-light/30">
         <SideNav />
       </div>
 

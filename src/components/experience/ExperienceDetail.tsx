@@ -14,13 +14,23 @@ const TechChips = ({ techStack, className = "" }: { techStack: string[]; classNa
 // Structure from yourOwn's ExperienceCard + NarrativeCard, restyled for the cream/sage theme.
 export const ExperienceDetail = ({ experience: exp }: { experience: Experience }) => (
   <article className="font-afacad text-sage">
-    <header className="border-b-4 border-ember pb-8 mb-10">
-      <span className="text-sm md:text-base tracking-[0.3em] uppercase text-ember">
-        {exp.type} — {formatRange(exp)}
-      </span>
-      <h1 className="text-5xl md:text-7xl leading-none tracking-tight mt-4">{exp.organization}</h1>
-      <p className="text-2xl md:text-3xl font-light mt-3">{exp.roleTitle}</p>
-      {exp.subtitle && <p className="text-lg md:text-xl text-sage/70 mt-2">{exp.subtitle}</p>}
+    <header className="border-b-4 border-ember pb-8 mb-10 flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
+      <div className="min-w-0">
+        <span className="text-sm md:text-base tracking-[0.3em] uppercase text-ember">
+          {exp.type} — {formatRange(exp)}
+        </span>
+        <h1 className="text-5xl md:text-7xl leading-none tracking-tight mt-4">{exp.organization}</h1>
+        <p className="text-2xl md:text-3xl font-light mt-3">{exp.roleTitle}</p>
+        {exp.subtitle && <p className="text-lg md:text-xl text-sage/70 mt-2">{exp.subtitle}</p>}
+      </div>
+      {exp.logo && (
+        <img
+          src={exp.logo}
+          alt={`${exp.organization} logo`}
+          decoding="async"
+          className="self-start md:self-center shrink-0 h-20 md:h-36 w-auto max-w-[70%] md:max-w-[18rem] object-contain mix-blend-multiply"
+        />
+      )}
     </header>
 
     <p className="text-xl md:text-2xl leading-relaxed font-light max-w-3xl mb-12">{exp.summaryLong}</p>
