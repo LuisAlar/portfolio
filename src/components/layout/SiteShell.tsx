@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 import { profile } from "../../content/profile";
 import { routeTheme, SideNav, StarHome } from "../nav/SideNav";
-import { ProfileIdentity } from "../profile/ProfileIdentity";
 import { SocialLinks } from "../profile/SocialLinks";
 
 // Merges yourOwn's SplitPaneShell + SidebarProfileLayout: fixed sidebar on desktop, top bar on mobile.
@@ -14,7 +13,6 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
   <div data-theme={routeTheme(pathname)} className="site-shell min-h-screen w-full md:flex md:h-screen md:overflow-hidden">
     {/* Mobile top bar */}
     <header className="md:hidden sticky top-0 z-30 shell-surface backdrop-blur border-b px-4 pt-3">
-      <ProfileIdentity profile={profile} compact />
       <SideNav orientation="horizontal" />
     </header>
 
