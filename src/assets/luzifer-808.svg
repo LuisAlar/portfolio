@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" stroke="#4E5D4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 808: subwoofer cabinet -->
+  <rect x="16" y="8" width="64" height="80" rx="10" fill="#FDFFE8"/>
+  <circle cx="48" cy="25" r="8" fill="#FCF3D9"/>
+  <circle cx="48" cy="25" r="3" fill="#4E5D4B"/>
+  <circle cx="48" cy="60" r="22" fill="#E56565"/>
+  <circle cx="48" cy="60" r="14" fill="#FCF3D9"/>
+  <circle cx="48" cy="60" r="6" fill="#4E5D4B"/>
+  <g fill="#4E5D4B" stroke="none">
+    <circle cx="24" cy="16" r="2"/>
+    <circle cx="72" cy="16" r="2"/>
+    <circle cx="24" cy="80" r="2"/>
+    <circle cx="72" cy="80" r="2"/>
+  </g>
+</svg>

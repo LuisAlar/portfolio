@@ -10,6 +10,46 @@
   --nav-active-asset: #e8f7e7;
 }
 
+/*
+ * Site shell theming. Registered so the variables themselves animate: every element that
+ * reads them (sidebar, nav links, dividers) fades in lockstep with one transition.
+ */
+@property --shell-bg { syntax: "<color>"; inherits: true; initial-value: #fcf3d9; }
+@property --shell-border { syntax: "<color>"; inherits: true; initial-value: rgba(172, 194, 167, 0.4); }
+@property --nav-text-color { syntax: "<color>"; inherits: true; initial-value: #acc2a7; }
+@property --nav-hover-color { syntax: "<color>"; inherits: true; initial-value: #4e5d4b; }
+
+.site-shell {
+  --shell-bg: #fcf3d9;
+  --shell-border: rgba(172, 194, 167, 0.4);
+  --nav-text-color: #acc2a7;
+  --nav-hover-color: #4e5d4b;
+  background-color: var(--shell-bg);
+  /* Leaving the dark tab: the page sweeps in from the left, so the nav lightens early. */
+  transition-property: --shell-bg, --shell-border, --nav-text-color, --nav-hover-color;
+  transition-duration: 600ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
+}
+.site-shell[data-theme="dark"] {
+  --shell-bg: #0b0b0b;
+  --shell-border: rgba(255, 255, 255, 0.12);
+  --nav-text-color: #d9d6cc;
+  --nav-hover-color: #ffffff;
+  /* Entering: the black page sweeps in from the right, so the nav darkens as it arrives. */
+  transition-delay: 500ms;
+}
+.shell-surface {
+  background-color: var(--shell-bg);
+  border-color: var(--shell-border);
+}
+.shell-border {
+  border-color: var(--shell-border);
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-shell { transition: none; }
+}
+
 html,
 body,
 #root {

@@ -33,6 +33,20 @@ export const ExperienceDetail = ({ experience: exp }: { experience: Experience }
       )}
     </header>
 
+    {exp.demo && (
+      <a
+        href={exp.demo.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-3 mb-10 px-6 py-3 rounded-full bg-ember text-paper text-sm md:text-base font-semibold tracking-[0.25em] uppercase transition-colors hover:bg-[#D44F4F] focus:outline-none focus-visible:ring-2 focus-visible:ring-ember/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+      >
+        <svg viewBox="0 0 16 16" aria-hidden className="w-4 h-4 fill-current transition-transform group-hover:translate-x-0.5">
+          <path d="M4 2.5v11a.5.5 0 0 0 .77.42l8.5-5.5a.5.5 0 0 0 0-.84l-8.5-5.5A.5.5 0 0 0 4 2.5Z" />
+        </svg>
+        {exp.demo.label}
+      </a>
+    )}
+
     <p className="text-xl md:text-2xl leading-relaxed font-light max-w-3xl mb-12">{exp.summaryLong}</p>
 
     {exp.heroImage && (

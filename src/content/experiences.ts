@@ -5,6 +5,7 @@ import oneFinityLogo from "../assets/1finitylogo.jpg";
 import orbitalLogo from "../assets/orbitalLogo.jpg";
 import xtensibleLogo from "../assets/Xtensible_logo.png";
 import indigoLogo from "../assets/indigologoblack.png";
+import luzifer808 from "../assets/luzifer-808.svg";
 
 // Migrated from the yourOwn Postgres DB (session a2b428b1…), one variant per experience.
 // Alternate variants not used: Indigo "Product Focus", Orbital "Leadership Focus" — see docs/CONTEXT.md.
@@ -194,6 +195,25 @@ export const experiences: Experience[] = [
       "Developed a Google Apps Script workflow to batch-generate and synchronize deliverables directly into Google Calendar and Google Tasks with automated reminders.",
     ],
     techStack: ["Gemini API", "Google Apps Script", "Google Workspace APIs"],
+  },
+  {
+    id: "luzifer",
+    type: "PROJECT",
+    title: "Luzifer: Guitar → Strudel",
+    organization: "Luzifer",
+    logo: luzifer808,
+    roleTitle: "Creator",
+    subtitle: "Play a beat on guitar, get a Strudel pattern back.",
+    startDate: "2026-10",
+    isCurrent: true,
+    // TODO(Luis): placeholder copy; write the full story later.
+    summaryShort: "Turns guitar takes of an 808, snare and hi-hat into a live-coded Strudel beat.",
+    summaryLong:
+      "Record each layer of a beat on guitar (bass notes for the 808, muted-string scratches for the snare and hi-hat) and Luzifer transcribes them onto a tempo grid and writes the Strudel code to play them back.",
+    demo: { label: "Try the live demo", url: "https://luzaltar-luzifer.hf.space" },
+    links: [{ label: "Hugging Face Space", url: "https://huggingface.co/spaces/LuzAltar/Luzifer" }],
+    impactBullets: [],
+    techStack: ["Python", "Basic Pitch", "librosa", "ONNX Runtime", "Gradio", "Strudel"],
   },
   {
     id: "yourown",

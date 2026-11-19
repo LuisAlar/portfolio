@@ -23,6 +23,8 @@ export interface Experience {
   /** Imported image URL; shown left of the row on the home page and beside the title on the detail page */
   logo?: string;
   links?: { label: string; url: string }[];
+  /** Live, try-it-now link; shown as a button under the detail page header */
+  demo?: { label: string; url: string };
   /** Line under roleTitle on the detail page */
   subtitle?: string;
   heroImage?: { src: string; alt: string };

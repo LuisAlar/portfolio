@@ -6,6 +6,8 @@ export interface NavTab {
   to: string;
   /** Star color while this tab is active */
   starColor: string;
+  /** Color scheme for the whole site while this tab is open (defaults to "light") */
+  theme?: "light" | "dark";
 }
 
 // Star color when no tab is active (e.g. Home)
@@ -14,7 +16,7 @@ const IDLE_STAR_COLOR = "#acc2a7";
 export const NAV_TABS: NavTab[] = [
   // Experiences live on Home now (Work / Automations / Projects); detail pages stay at /experiences/:id.
   { label: "A Bit About Me!", to: "/about", starColor: "#E8B92F" },
-  { label: "Photography", to: "/photography", starColor: "#8B1E2B" },
+  { label: "Photography", to: "/photography", starColor: "#E56565", theme: "dark" },
 ];
 
 // Same path as assets/starr.svg, inlined so the fill can change per tab while keeping its outline.
@@ -28,6 +30,21 @@ const Star = ({ color, className }: { color: string; className: string }) => (
 );
 
 const isActive = (pathname: string, to: string) => pathname === to || pathname.startsWith(`${to}/`);
+
+/** Position of a path in the nav (Home = 0, then tabs in order); drives transition direction. */
+export const routeOrder = (pathname: string, tabs = NAV_TABS) => {
+  const i = tabs.findIndex((t) => isActive(pathname, t.to));
+  if (i >= 0) return i + 1;
+  return pathname.startsWith("/experiences/") ? 0.5 : 0; // detail pages sit just "after" Home
+};
+
+/** Color scheme for a path: the active tab's theme, or light. */
+export const routeTheme = (pathname: string, tabs = NAV_TABS) =>
+  tabs.find((t) => isActive(pathname, t.to))?.theme ?? "light";
+
+/** Accent color for a path: the active tab's star color, or the idle star color. */
+export const routeColor = (pathname: string, tabs = NAV_TABS) =>
+  tabs.find((t) => isActive(pathname, t.to))?.starColor ?? IDLE_STAR_COLOR;
 
 interface StarHomeProps {
   tabs?: NavTab[];

@@ -13,6 +13,7 @@ export default {
           mist: "#d7dfda", // nav hover
         },
         ember: "#E56565", // timeline track, social icons
+        ink: "#0B0B0B", // dark-theme background (Photography)
       },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],

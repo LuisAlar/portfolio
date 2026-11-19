@@ -1,0 +1,148 @@
+%-------------------------
+% Resume in Latex - Luis Alarcon (IT Project Management Focus)
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Luis Alarcon} \ \vspace{1pt}
+    \small 936-828-9969 $|$ \href{mailto:alarconMandujanoLuis@gmail.com}{\underline{alarconMandujanoLuis@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/luis-alberto-alarcon-mandujano-68316b359}{\underline{linkedin}} $|$
+    \href{https://luis-alarcon.vercel.app/}{\underline{portfolio}}
+\end{center}
+
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Software Engineering student with hands-on experience in digital media at a college radio station and a student magazine. Gathers requirements from stakeholders, documents decisions and plans, and keeps technical projects moving from kickoff to handoff.}}
+ \end{itemize}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Dallas, TX}
+      {Bachelor of Science in Software Engineering}{Expected Dec 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fujitsu $|$ 1Finity}{Jun 2026 -- Aug 2026}
+      {AI Workflow Automation Intern}{}
+      \resumeItemListStart
+        \resumeItem{Ran discovery sessions with \textbf{executive leadership} and sales operations to gather \textbf{user requirements}, turning operational bottlenecks into scoped specifications, build plans, and risk assessments.}
+        \resumeItem{Wrote the project's \textbf{documentation}: a product requirements document (PRD), system overview, implementation guides, and an analyst user guide for the sales team.}
+        \resumeItem{Delivered an automated weekly Sales \& Marketing report, cutting compilation from \textbf{3 hours to seconds}, with a status-based approval workflow that showed managers which teams had submitted and what was ready.}
+        \resumeItem{Built stakeholder presentations and architecture diagrams to report progress and drive adoption across sales, marketing, and management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Radio UTD}{Aug 2026 -- Present}
+      {Systems Administrator}{}
+      \resumeItemListStart
+        \resumeItem{Managed a website outage from diagnosis to resolution after traffic hit \textbf{280\%} of the hosting limit, shipping a fix that cut projected bandwidth by \textbf{95\%} and recording every change in a \textbf{change log}.}
+        \resumeItem{Wrote a readiness plan with success criteria, metrics to watch, and a decision date for returning to the free hosting plan, saving \textbf{\$20/month} once the data supports it.}
+        \resumeItem{Lead discovery and \textbf{migration planning} for the station's legacy \textbf{Snowflake} music catalog, mapping data dependencies and risks.}
+        \resumeItem{Automated DJ track submissions with \textbf{Power Automate} and \textbf{Box}, replacing manual file handling for live shows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indigo Magazine}{Dec 2023 -- Present}
+      {Web Development Lead \& Creative Director}{}
+      \resumeItemListStart
+        \resumeItem{Lead the magazine's web presence and creative direction, working with writers and editors to decide what to build next.}
+        \resumeItem{Built an article submission pipeline that publishes writers' work to the website, letting non-technical editorial staff publish on their own without a developer.}
+        \resumeItem{Moved the magazine's media onto an automated \textbf{Box}-to-\textbf{Cloudflare CDN} pipeline, speeding up asset delivery and keeping the codebase lean.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Orbital Mentorship}{Nov 2024 -- Jun 2026}
+      {DevOps Lead}{}
+      \resumeItemListStart
+        \resumeItem{Led a standardized \textbf{Docker}-based onboarding process for new developers, cutting setup time by \textbf{50\%} and eliminating dependency errors.}
+        \resumeItem{Built an API monitoring tool to track performance across the platform, reducing per-page network requests from \textbf{20 to 1--2}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Xtensible Solutions}{Apr 2024 -- Aug 2024}
+      {Solutions Engineer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Ran functional and regression API testing and documented defects for \textbf{engineering leadership}, tightening the QA feedback loop before releases.}
+        \resumeItem{Wrote \textbf{Python} scripts to automate cloud deployment tasks, reducing manual work for the team.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Society of Hispanic Professional Engineers (SHPE)}{Oct 2023 -- Apr 2024}
+      {Corporate Liaison}{}
+      \resumeItemListStart
+        \resumeItem{Planned and hosted professional networking \textbf{events} connecting student members with industry representatives.}
+        \resumeItem{Coordinated with corporate partners and secured \textbf{\$300} in initial sponsorship funding for student-led engineering initiatives.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Project:} Requirements Gathering, Technical Writing, Project Documentation, Stakeholder Presentations, Agile, Jira \
+     \textbf{Tools:} Microsoft 365, SharePoint, Power Automate, Power BI, Box, Git \
+     \textbf{Technical:} Python, SQL, JavaScript, React, Node.js \
+     \textbf{Languages:} English, Spanish
+    }}
+ \end{itemize}
+
+\end{document}
