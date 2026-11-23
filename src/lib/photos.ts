@@ -1,6 +1,8 @@
 import type { Photo, PhotoFormat } from "../content/types";
 
-const BASE_URL = (import.meta.env.VITE_PHOTOS_BASE_URL || "/photos-local").replace(/\/+$/, "");
+// Default "" = same origin (/photos/...): proxied to R2 by vercel.json in production and by
+// vite.config.ts in dev. Set VITE_PHOTOS_BASE_URL=/photos-local to use `--target local` output.
+const BASE_URL = (import.meta.env.VITE_PHOTOS_BASE_URL ?? "").replace(/\/+$/, "");
 
 const MIME: Record<PhotoFormat, string> = { avif: "image/avif", webp: "image/webp" };
 
@@ -24,6 +26,8 @@ export const pictureProps = (photo: Photo, sizes: string, { eager = false } = {}
   sources: photo.formats
     .filter((f) => f !== "webp")
     .map((f) => ({ type: MIME[f], srcSet: photoSrcSet(photo, f), sizes })),
+  /** Spread onto <img> too. Lowercase: React 18 doesn't map `fetchPriority` yet. */
+  priority: { fetchpriority: eager ? "high" : "auto" } as Record<string, string>,
   img: {
     src: photoUrl(photo, 1200, "webp"),
     srcSet: photoSrcSet(photo, "webp"),
@@ -33,7 +37,6 @@ export const pictureProps = (photo: Photo, sizes: string, { eager = false } = {}
     alt: photo.alt,
     loading: eager ? ("eager" as const) : ("lazy" as const),
     decoding: "async" as const,
-    fetchPriority: eager ? ("high" as const) : ("auto" as const),
     style: {
       backgroundColor: photo.color,
       backgroundImage: `url("${photo.placeholder}")`,

@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  /** "/" (same-origin via the vercel.json proxy), a full bucket URL, or unset for /photos-local */
+  /** Unset or "/" = same origin (proxied to R2), "/photos-local" for local output, or a full URL */
   readonly VITE_PHOTOS_BASE_URL?: string;
 }
 

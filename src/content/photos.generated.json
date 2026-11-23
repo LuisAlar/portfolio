@@ -3,11 +3,39 @@
   "collections": [
     {
       "id": "eternal",
-      "title": "eternal",
+      "title": "Eternal",
+      "year": 2025,
       "cover": "eternal-p1170104",
       "count": 5,
       "startDate": "2026-03-14T05:42:55",
       "endDate": "2026-03-14T05:46:52"
+    },
+    {
+      "id": "damn-i-love-cereal",
+      "title": "Damn I love cereal",
+      "year": 2025,
+      "cover": "damn-i-love-cereal-cereal-1",
+      "count": 10,
+      "startDate": "2025-10-04T02:22:34",
+      "endDate": "2025-10-04T03:10:09"
+    },
+    {
+      "id": "ni-de-aqui",
+      "title": "Ni de aquí",
+      "year": 2025,
+      "cover": "ni-de-aqui-p1130469",
+      "count": 9,
+      "startDate": "2025-09-27T05:20:17",
+      "endDate": "2025-09-27T06:04:42"
+    },
+    {
+      "id": "poorreheat",
+      "title": "Poor Reheat",
+      "year": 2025,
+      "cover": "poorreheat-img-5248",
+      "count": 8,
+      "startDate": "2023-04-02T09:03:32",
+      "endDate": "2025-01-04T11:55:02"
     }
   ],
   "photos": [
@@ -153,6 +181,777 @@
         "shutter": "1/160s",
         "iso": 800,
         "takenAt": "2026-03-14T05:46:52"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-cereal-1",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/cereal-1-a51d5c2911df",
+      "width": 2048,
+      "height": 1537,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2048
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBQCdASoYABIAPu1cqE2ppKOiN/VYATAdiWMAyjL1OgAk0UI3e9zgyPOnlNMCtcA25ZsAAP7za9P8R18Ivh74gjPZNB2QUkHWWuRXFGxa/QljtsbdSgHZSdCG1Acxgo95GZr9ct0qT7Nrbp3s7FYgo94l8gAA",
+      "color": "#f8f8f8",
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-cereal-2",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/cereal-2-c9dfed3d9f0f",
+      "width": 2048,
+      "height": 1537,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2048
+      ],
+      "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBQCdASoYABIAPu1eq02ppSQiMBgMATAdiWMAxPjIpAAEXY8DpeDqjxwrk2XnaxbngQAA/rWlfIx4h+HPHyjKQorl/u0AV7ovAGHAPIPd2snN1s/znYAA8heunES4zXgFyyJEXHJrn8w9OP6dmUeqDfqx/RXDzrcF+BQVKX+FRhaqJlk4wAAA",
+      "color": "#f8f8f8",
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-damn-i-love-cereal-2",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/damn-i-love-cereal-2-b23af0212d40",
+      "width": 2048,
+      "height": 1537,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2048
+      ],
+      "placeholder": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAAAQAwCdASoYABIAPu1usFIppiSiqAgBMB2JaQAAPPR7WEAA/vDeRpFh4AA=",
+      "color": "#f8f8f8",
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-beforeflick",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/beforeflick-b16e11d7f468",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASoYABIAPu1ip04ppaMiMAgBMB2JZwDKtCHfUUArPVpdl+7wnhfEjtTUAAD+82v/CavjlE61kDwJDLfneSjAj+Eft6BW/AyVoCSVCMuYCjuHETmO3KZQ3SOz7QRQUGFpT+HXHlyobKxIAAAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "14mm",
+        "aperture": "f/3.6",
+        "shutter": "1/25s",
+        "iso": 200,
+        "takenAt": "2025-10-04T02:22:34"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-flick",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/flick-b2b1f66a5f7a",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoYABIAPu1kqE2ppaOiMAgBMB2JZwDG9CHfZffjpUynpVUrW7GRCAD+82v+s0W+TsOWocWnX16Vda91LUj1Zfd+oflb4H5oS1uruOlauqOpqVxk2EBTEUTsYD+LFaKUpYm2joAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "14mm",
+        "aperture": "f/3.6",
+        "shutter": "1/25s",
+        "iso": 200,
+        "takenAt": "2025-10-04T02:22:34"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-final-2",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/final-2-44c626678cc3",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBQCdASoYABIAPu1qrlCppaQiqAqpMB2JZQDDVExBHmobjJtktjE/HznckB/cK4+E3IAA/oNoEXh+ohNCUrzZpojr4xi5WBcWAJ21iUOPnkqpufm1piNPW9AuGjr4GODTjDPRTQDdofHk+1ehv5D0+iAxVX7GT7y9Ca1f9i8U66McBBqpIbVNvElwYI/6SUBpV4AzotCFYcv8sRlkIAAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/3.5",
+        "shutter": "1/20s",
+        "iso": 200,
+        "takenAt": "2025-10-04T02:58:35"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-hair-1",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/hair-1-ab1470252cfe",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwBACdASoYABIAPu1gqk2ppSQiMBgMATAdiWcAAC5t5LXD5XR+u9lcq9Po6OEMnEAA/vNyRWhl91m0Ki8jMMBXnby0RqXwN6AmeLOoy6AXj0KKAnWVnhFgy74z1y2EyZ7i8Ll5Vv9G1Li3PSWL8BxXwsjKVUGosB3ggeIAjwKmqRRvnYEAAAAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "23mm",
+        "aperture": "f/4.9",
+        "shutter": "1/13s",
+        "iso": 200,
+        "takenAt": "2025-10-04T03:01:48"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-final-4",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/final-4-85768f8af310",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwBACdASoYABIAPu1wsVKppiSiqAgBMB2JZwDE2A9reFiDKohKhqcPBRSKEv7iLAAA/vCHTtLrUBr1irXqArkDpOGqxIcx2bU4XV35kBHiHGh1xMPdqEw4bA4eQo2KGu2BronsKRAxLehw3csQMyQ3zmvK2Xlq5q4AAA==",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/3.5",
+        "shutter": "1/20s",
+        "iso": 200,
+        "takenAt": "2025-10-04T03:03:41"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-punch-2",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/punch-2-d50ed91a957c",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwBACdASoYABIAPu1sq1GppaOiqAqpMB2JZQC06BDCqS5M5ByieLecArUUcvJhtgAAyW/ncOx3nj+t8YO+2N4DLDU/SatJkmEFF9lBq58Olb4jjHJdJkGoQNEk7NTt7C+agH5by2UEY2VoEV2FQr0d3HtZKuMf6dwrKHI4AAA=",
+      "color": "#181818",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/3.5",
+        "shutter": "1/40s",
+        "iso": 200,
+        "takenAt": "2025-10-04T03:07:30"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "damn-i-love-cereal-punch",
+      "collection": "damn-i-love-cereal",
+      "path": "photos/damn-i-love-cereal/punch-41910d4cefa2",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBQCdASoYABIAPu1mqE4ppaOiMAgBMB2JZQC84CHfj1YKBCzjpOf5XbviEVir5wEuQAD+83SG30kx34i4d/dYIaqgdmj3UTLfEMWioAyuwkeeCoLCj+Frp5xAEay6ASNoMWADMnbFfLPicFcF5NSdb5dm13BMUAAAAA==",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "focalLength": "12mm",
+        "aperture": "f/3.5",
+        "shutter": "1/30s",
+        "iso": 200,
+        "takenAt": "2025-10-04T03:10:09"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-p1130469",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/p1130469-581ffae0f875",
+      "width": 1920,
+      "height": 1080,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        1920
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaAC7ACIj39o6mC+P+ZHYWgYAAP7QnWI67KuyXn+7xCKgaeagp9jmSnzcPLP6cNXL2yuPHInrzBZH5nwv8CDgP3fJNqN244PurwqipowfTLqg279ePsgcdl83/tjAAAA=",
+      "color": "#181818",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "takenAt": "2025-09-27T05:20:17"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-25",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/25-46305a57f2f2",
+      "width": 1920,
+      "height": 1080,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        1920
+      ],
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYAA4APu1iqU2ppaOpMAgBMB2JZACdOUAA36IhrmygAP7o5h+0TxLzDJnNuNaxGW/beeDPLA0kViQOAgQkv+dlMdLcbN97EC6xZIClyKHhcID7gAA=",
+      "color": "#280808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/3.5",
+        "shutter": "1/125s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:23:24"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-p1130106",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/p1130106-1f58805f9316",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASoYABIAPu1kq06ppaQiKA1RMB2JYgCxH1j8IA5KAdOCt0gTkfxY9FS0AADHQrxcu8siFnf/sejqulje9VXyvbrXn26iLBqiSKjhX4O1dsLkQUWmr/FALpCVtAORcm5D4mgYxHek9I8ohcgAAAA=",
+      "color": "#c86838",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "15mm",
+        "aperture": "f/22",
+        "shutter": "1/50s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:38:23"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-9",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/9-3633c165cde4",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBQCdASoYABIAPu1kqk2ppaQiMAgBMB2JaACdMs8zGC4W/eCoy+1jU/NyAOouqGUAAP0SsSUYVpUGzAnRo5H0CCmhV5hUuokwWDb19zQMgb/tTxh6kg7cozIgRHJfQfSicfbZIJQYK2glmSwhcqFUUq3307S6OA4gTrLh2xO61xVmNEFu3a9T6TPP2zZbYxBTkAXEAAA=",
+      "color": "#982808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/22",
+        "shutter": "1/3s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:47:18"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-11",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/11-f0c3d491bcf4",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQBACdASoYABIAPu1mq0+ppSOjMBgIATAdiUAVhlvYKQLNKEvCCSjGvHdiqkAA+vgpAPKchzs308Cv124WanqR3TTK8K5oySdRQSEEi3EqaElA3QZJxFVQAAA=",
+      "color": "#882808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "22mm",
+        "aperture": "f/22",
+        "shutter": "1/13s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:52:55"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-14",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/14-dfc47c5ee348",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQBACdASoYABIAPu1ur1IppiQiqAgBMB2JQBajW0gwBgwsi5F7Eb8ijZirNa4UAAD+oNCatAE9yiKwjmqmhfDp8AKhd/FIaUvqPAvFgbFFDD6sPQzxRUnPytHtr2u7YJdN7b8MPa85y7uUAAA=",
+      "color": "#a83808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "22mm",
+        "aperture": "f/22",
+        "shutter": "1/10s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:54:27"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-p1130341",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/p1130341-c3125137e9b0",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoYABIAPu1ip02ppaOjMAgBMB2JQBOl9AAQgMvjX+V3AADn0RiBLgWU8H/uj0KtKGkY/q7tjz4H+MUzhuKppuNg6NrNcSGEfHMepdu7qq4UwnWnMXljOLE3AAA=",
+      "color": "#d85808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "14mm",
+        "aperture": "f/22",
+        "shutter": "1/3s",
+        "iso": 200,
+        "takenAt": "2025-09-27T05:58:33"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-p1130401",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/p1130401-4f66e5b13280",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoYABIAPu1gqk2ppaQiMBgMATAdiUAAAkzEE7nlVcpeFkzeAADD/4KlHN+WpudZ/PJfzED5HAnRajnFv/1RtQOhP/I23YZNZFlc5L0sKZt91qcODeJ7gHTubn5reydw3Fn5trIDqgDXqJ7TC0BzSAiAAAA=",
+      "color": "#c87858",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/22",
+        "shutter": "1/50s",
+        "iso": 200,
+        "takenAt": "2025-09-27T06:02:54"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "ni-de-aqui-p1130425",
+      "collection": "ni-de-aqui",
+      "path": "photos/ni-de-aqui/p1130425-1b09ca0fbae8",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBQCdASoYABIAPu1qqlEppaOiqAqpMB2JQBhQZYAbIkeOXQ7fUo3oEF8AEH2XStRgAP7TU41g8EzTcDmiGJjNmTo7U/qM9Y8Mu/DusY0rTrneTpFD8Cvs9zNfDYPk/Fs1gVb6TnBCbkQrPD7P//t6hyNa7/mAAAA=",
+      "color": "#c8c8d8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "15mm",
+        "aperture": "f/22",
+        "shutter": "1/40s",
+        "iso": 200,
+        "takenAt": "2025-09-27T06:04:42"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5248",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5248-d78afa8bae5a",
+      "width": 2272,
+      "height": 1704,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2272
+      ],
+      "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoYABIAPu1mq0+ppaOiMBgIATAdiWMAyrQQ8ASAOFSuKYAA/vQiGTuB8vBMw0SVe5RaqZTTjqsiB3e6m2djg2JgAAA=",
+      "color": "#080808",
+      "exif": {
+        "takenAt": "2023-04-02T09:03:32"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5632",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5632-b3ebb134a42b",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAACwBACdASoYABIAPu1qr1CppaQiqAqpMB2JZgCdMoR0KBTu6LhpD2jbXJbns3FwAP7yohR5JyqDKHVAptNL7Q0AJ2upniuSMyOYCgfAt+qOcc/l8fgdj/TW8keIZx49EOic0H+QvWE0UMymTWt5qE+2rLzVZGRkHdOeIkAwmWhp2HHWzFaw3euX2AA=",
+      "color": "#180808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/4",
+        "shutter": "1/10s",
+        "iso": 800,
+        "takenAt": "2025-01-04T11:41:16"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5618",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5618-adcf24378a0c",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBgCdASoYABIAPu1wr1IppiQiqAgBMB2JbACdMoR5n6bxSDgAPQYispTRyrQMAK0s0iLHjl3agfcYAP7r6qAuRojmA0sXhVL5wUxfdI9NVMjtiQ9Phki5QW0ALjK7Tu1F2bWvBPU8ll14SqsM8aK+qoj0rJeMsK4GGTNZpaJKE6Evg6Rm1u0pobZdtUT7tlX2JjmewjwIGt1V8OZqBXio4Ic8mcAA",
+      "color": "#481808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/4",
+        "shutter": "1/6s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:43:19"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5601",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5601-c1ac8ace111d",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBQCdASoYABIAPu1iq1AppSOisBgIATAdiWwAnTKEgrCgABytdeI+BU4tu0KkZZEWD1n7gAD+7Bq0XSYUFvTmvws0UD8WZNFVqGdUpoI3rOyjaJl1nItj+TyEhU48UmcdiI1RBaEyG8pIltSuvsAN9xFPs9t4FUqdQOOaSVIOO0HvoYn0QcX0RWZS+7HjVWgQXKLwAAA=",
+      "color": "#480808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "25mm",
+        "aperture": "f/5.1",
+        "shutter": "1/4s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:49:35"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5596",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5596-acd72e9075a3",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwBACdASoYABIAPu1kqk2ppaQiMAgBMB2JQBf9hDv4emfOVtgILe1exAAA/vQaeviShuwE61EEQuTDZqyePM1KMopXox0YBr3cOj/pLeu7dZ+q/CJ3yEAA",
+      "color": "#080808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "25mm",
+        "aperture": "f/5.2",
+        "shutter": "1/80s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:49:38"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5581",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5581-9056e0a8a69f",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwBACdASoYABIAPu1or1CppaQiqAqpMB2JZjcAAwDtdgaiTtv2CSoX7m0xaZIUUpAA/tlCly1XFK7JmHtv+H8ShYveBD+MEaxLlPSDBEWJBeohd/9aW03UJfQ5MEvemElnPNikTIY1iWYDW/aSPtNzhWZjybL43Cwz4YMAAAA=",
+      "color": "#784828",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "17mm",
+        "aperture": "f/4",
+        "shutter": "1s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:52:46"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5576",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5576-66bbafbfc16f",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBQCdASoYABIAPu1kpk2ppaMiMBgMATAdiWwAnTNoePe6ACsM4iLwHMHkEUtru5BFe70AAP7ytLHJOOCa98ip++8HiiuCpM6Q9c2VrkMUqLhVTNOfnPLk/7fJz12ADbUTL7PKb/J7gaVc2jM/GEEvF9dSBJcu8GZDzHFa4DfgPeLlyoknFpj6hAA=",
+      "color": "#780808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/4",
+        "shutter": "1s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:54:55"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "poorreheat-img-5575",
+      "collection": "poorreheat",
+      "path": "photos/poorreheat/img-5575-3b29b2774b6c",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwBACdASoYABIAPu1qqlEppaOiqAqpMB2JaACdMuN1QBvhtH4c/ZmRa1S8rtQAAP7vNf67/vjoD/sanlwyni3gCcPvqy2V9VT+XvvIOGqoC07lW1WqoKBUYakVAyeGakrAQ/7Srt3HqP1+Y8nDgEQs4hELmbNsyltgSaVAVoGulIGgAAA=",
+      "color": "#180808",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/4",
+        "shutter": "1s",
+        "iso": 1600,
+        "takenAt": "2025-01-04T11:55:02"
       },
       "formats": [
         "avif",

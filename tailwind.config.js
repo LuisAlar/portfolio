@@ -17,6 +17,7 @@ export default {
       },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
+        didot: ["\"GFS Didot\"", "Didot", "\"Bodoni 72\"", "serif"],
       },
     },
   },

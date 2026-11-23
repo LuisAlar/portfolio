@@ -101,6 +101,8 @@ export interface PhotoCollection {
   title: string;
   description?: string;
   order?: number;
+  /** Shown as "(year)" next to the title */
+  year?: number;
   /** Photo id used as the cover */
   cover: string;
   count: number;

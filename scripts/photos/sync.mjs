@@ -123,7 +123,16 @@ async function s3Storage() {
       }
     },
     async put(Key, Body, ContentType) {
-      await client.send(new PutObjectCommand({ Bucket, Key, Body, ContentType, CacheControl: CACHE_CONTROL }));
+      // The SDK retries HTTP errors, but not dropped TLS connections; retry those here.
+      for (let attempt = 1; ; attempt++) {
+        try {
+          await client.send(new PutObjectCommand({ Bucket, Key, Body, ContentType, CacheControl: CACHE_CONTROL }));
+          return;
+        } catch (err) {
+          if (attempt >= 4 || err?.$metadata?.httpStatusCode === 403) throw err;
+          await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+        }
+      }
     },
     async list(Prefix) {
       const keys = [];
@@ -355,6 +364,8 @@ async function main() {
       title: cMeta.title || dirName,
       ...(cMeta.description && { description: cMeta.description }),
       ...(cMeta.order !== undefined && { order: cMeta.order }),
+      // Shown as "(year)". Set in photos.json; falls back to the newest capture date.
+      ...((cMeta.year || dates.length) && { year: Number(cMeta.year || dates.at(-1).slice(0, 4)) }),
       cover: cover.id,
       count: collectionPhotos.length,
       ...(dates.length && { startDate: dates[0], endDate: dates.at(-1) }),
