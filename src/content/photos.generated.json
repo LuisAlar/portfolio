@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "eternal",
+      "title": "eternal",
+      "cover": "eternal-p1170104",
+      "count": 5,
+      "startDate": "2026-03-14T05:42:55",
+      "endDate": "2026-03-14T05:46:52"
+    }
+  ],
+  "photos": [
+    {
+      "id": "eternal-p1170104",
+      "collection": "eternal",
+      "path": "photos/eternal/p1170104-7f78469e065b",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQBACdASoYABIAPu1orE8ppiQpsBgIATAdiWcAz2QQ3DvM9Sq5NXBgVWshE0yUIAD+7VD7qGqQViGbmMwt9C1Ed24Vz16zukJ5Je+kuTUZdKo/xMHLeXB/eJPzMwNHm9LR4X94MtewAA==",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/18",
+        "shutter": "1/160s",
+        "iso": 800,
+        "takenAt": "2026-03-14T05:42:55"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "eternal-p1170108",
+      "collection": "eternal",
+      "path": "photos/eternal/p1170108-b6c4f7f8e55f",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABQBACdASoYABIAPuFWpE2oqSOiN/qoASAcCWkAAFuzOxrTP5G79zCSYCeAAP7hGSDMFnPKsd4y6Hr5P70JG3nH7AhVHGctw4AAAAAA",
+      "color": "#d8d8d8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/18",
+        "shutter": "1/160s",
+        "iso": 800,
+        "takenAt": "2026-03-14T05:42:57"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "eternal-p1170133",
+      "collection": "eternal",
+      "path": "photos/eternal/p1170133-fe904e0fd3e1",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoYABIAPu1gqk2ppSQiMBgMATAdiUbgAHoECS6Gjwc9jndjDPT3tAAA/u2LSm1Q4zJYTlRSxNod5CaocuA0/X9/V21T9xNXujadS4+m9UBxWMXb+cAH5Mra3yjqYzCrwGb0AAAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/18",
+        "shutter": "1/160s",
+        "iso": 800,
+        "takenAt": "2026-03-14T05:43:21"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "eternal-p1170238",
+      "collection": "eternal",
+      "path": "photos/eternal/p1170238-0b709124b058",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBQCdASoYABIAPu1cqk4ppKQiMBgMATAdiWIAxNgLivI+IOSOAYhWr+rL6zZS07YTQAD+8eBfzdbkljvumq49Qo/FV6qtHdz4eS6ErPqSQfcZJfupa7ptrWs1bZHPISVhB0a6p6KE5zxPD+WTGEfZGWK4ikdZ8DzeVpQ2L/d1qwAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "lens": "LUMIX G VARIO 12-32/F3.5-5.6",
+        "focalLength": "12mm",
+        "aperture": "f/18",
+        "shutter": "1/160s",
+        "iso": 800,
+        "takenAt": "2026-03-14T05:46:02"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    },
+    {
+      "id": "eternal-p1170258",
+      "collection": "eternal",
+      "path": "photos/eternal/p1170258-a0d1deba8bc1",
+      "width": 4592,
+      "height": 3448,
+      "widths": [
+        400,
+        800,
+        1200,
+        1600,
+        2400
+      ],
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQBACdASoYABIAPu1kqk2ppaQiMAgBMB2JZwDMWCHgUN+zERfncfz0vTfmLN1YAAD+78oMlmabhlDHdiYFoj0GF9OncXKl2/CwBYqI9RNwIvROXqGXSo0TaqtTQAAA",
+      "color": "#f8f8f8",
+      "exif": {
+        "camera": "Panasonic DMC-GX85",
+        "focalLength": "12mm",
+        "aperture": "f/18",
+        "shutter": "1/160s",
+        "iso": 800,
+        "takenAt": "2026-03-14T05:46:52"
+      },
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "alt": ""
+    }
+  ]
+}

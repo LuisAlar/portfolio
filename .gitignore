@@ -3,3 +3,8 @@ dist
 scratch
 *.local
 .DS_Store
+
+# Photo pipeline: full-res originals stay local; only the manifest is committed
+photos/originals
+public/photos-local
+.env

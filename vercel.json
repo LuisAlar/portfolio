@@ -1,3 +1,12 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/photos/:path*", "destination": "https://pub-4270c7f8f7ce494bbf8c0e23e9b4a5a9.r2.dev/photos/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/photos/(.*)",
+      "headers": [{ "key": "x-vercel-enable-rewrite-caching", "value": "1" }]
+    }
+  ]
 }

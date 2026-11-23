@@ -55,3 +55,56 @@ export interface Profile {
   interests: string[];
   links: Partial<Record<SocialKey, string>>;
 }
+
+/** One photograph, as written to photos.generated.json by scripts/photos/sync.mjs. */
+export type PhotoFormat = "avif" | "webp";
+
+export interface Photo {
+  /** `<collection>-<file slug>`; stable across re-edits */
+  id: string;
+  /** Collection id (folder name under photos/originals/) */
+  collection: string;
+  /** Object-key prefix: `photos/<collection>/<slug>-<hash>`. Variants live at `<path>/<width>.<format>` */
+  path: string;
+  /** Intrinsic size after EXIF rotation, used for aspect ratio / layout before load */
+  width: number;
+  height: number;
+  /** Encoded widths, ascending; the last one is the largest available */
+  widths: number[];
+  formats: PhotoFormat[];
+  /** ~24px blurred WebP data URI, shown while the real image loads */
+  placeholder: string;
+  /** Dominant color, a cheaper placeholder background */
+  color: string;
+  alt: string;
+  title?: string;
+  caption?: string;
+  tags?: string[];
+  featured?: boolean;
+  order?: number;
+  location?: string;
+  exif?: {
+    camera?: string;
+    lens?: string;
+    focalLength?: string;
+    aperture?: string;
+    shutter?: string;
+    iso?: number;
+    /** Camera-local wall time, "YYYY-MM-DDTHH:mm:ss" (EXIF has no time zone) */
+    takenAt?: string;
+  };
+}
+
+/** A folder of photos under photos/originals/, e.g. "eternal". */
+export interface PhotoCollection {
+  id: string;
+  title: string;
+  description?: string;
+  order?: number;
+  /** Photo id used as the cover */
+  cover: string;
+  count: number;
+  /** Earliest / latest capture time in the collection */
+  startDate?: string;
+  endDate?: string;
+}

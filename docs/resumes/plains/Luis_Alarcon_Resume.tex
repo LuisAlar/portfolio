@@ -1,0 +1,137 @@
+%-------------------------
+% Resume in Latex - Luis Alarcon (Plains - Operations Management System, Digital & AI Innovation Intern)
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Luis Alarcon} \\ \vspace{1pt}
+    \small 936-828-9969 $|$ \href{mailto:alarconMandujanoLuis@gmail.com}{\underline{alarconMandujanoLuis@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/luis-alberto-alarcon-mandujano-68316b359}{\underline{linkedin}} $|$
+    \href{https://luis-alarcon.vercel.app/}{\underline{portfolio}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Dallas, TX}
+      {Bachelor of Science in Software Engineering}{Expected Dec 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fujitsu $|$ 1Finity}{Jun 2026 -- Aug 2026}
+      {AI Workflow Automation Intern}{}
+      \resumeItemListStart
+        \resumeItem{Cut weekly Sales \& Marketing report compilation from \textbf{3 hours to seconds} with a \textbf{Power Automate} pipeline that ingests scattered regional updates into \textbf{SharePoint Lists}, building a searchable history that teams and \textbf{Copilot} agents query week over week.}
+        \resumeItem{Built a canvas \textbf{Power App} in SharePoint where teams upload, edit and approve updates and trigger report generation, with a status-based approval view for managers.}
+        \resumeItem{Worked alongside the sales BI lead, using and helping maintain executive \textbf{Power BI} dashboards built on \textbf{SAP} data, and integrated that data into the Power App with a nightly \textbf{Salesforce} sync using \textbf{DAX} queries against the Power BI semantic model.}
+        \resumeItem{Wrote and ran a test plan for the Salesforce-to-SharePoint pipeline; all \textbf{6} test cases passed, confirming the nightly sync never overwrites manual updates and that empty results can't wipe cached data.}
+        \resumeItem{Helped the Knowledge Creation team implement an \textbf{AI document auditing agent}: a Power Automate flow sends uploaded documents to the agent, which checks them against a rules template and returns a Word report and an \textbf{Excel} error log.}
+        \resumeItem{Led discovery sessions with \textbf{executive leadership} and sales operations, turning process bottlenecks into specifications that drove voluntary adoption.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indigo Magazine}{Dec 2023 -- Present}
+      {Web Development Lead \& Creative Director}{}
+      \resumeItemListStart
+        \resumeItem{Built an agentic development harness with custom skills and guardrails, enabling non-technical student contributors across \textbf{10+ web projects} to ship features safely with \textbf{AI coding agents}.}
+        \resumeItem{Set the team's AI governance and review workflow, balancing agent-assisted speed with standards that protect the magazine's editorial and artistic style.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Radio UTD}{Aug 2026 -- Present}
+      {Systems Administrator}{}
+      \resumeItemListStart
+        \resumeItem{Automated DJ track submissions with \textbf{Power Automate} and \textbf{Box}, replacing manual file handling for live shows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Orbital Mentorship}{Nov 2024 -- Jun 2026}
+      {DevOps Lead}{}
+      \resumeItemListStart
+        \resumeItem{Standardized developer onboarding with \textbf{Docker} and \textbf{Python}/\textbf{Bash} automation scripts, cutting setup time by \textbf{50\%} and eliminating dependency errors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Xtensible Solutions}{Apr 2024 -- Aug 2024}
+      {Solutions Engineer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Wrote \textbf{Python} automation for cloud deployment tasks and ran functional and regression API testing, reporting defects to engineering leadership before release.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{AI Syllabus Task \& Schedule Automator} $|$ \emph{Google Gemini API, Google Apps Script, Workspace APIs}}{2026}
+      \resumeItemListStart
+        \resumeItem{Used the \textbf{Gemini API} to turn unstructured syllabi into structured deadline data, then synced it to \textbf{Google Calendar} and \textbf{Tasks} with reminders.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Power Platform \& Microsoft:} Power Apps (Canvas), Power Automate, Power BI (DAX), SharePoint Lists, Copilot Studio, Excel, Word, PowerPoint \\
+     \textbf{AI \& Automation:} Microsoft Copilot, AI Agents, Generative AI (Gemini API), Prompt Design, Google Apps Script \\
+     \textbf{Data \& Programming:} Python, SQL, JavaScript, TypeScript, Salesforce, SAP data (via Power BI), Snowflake \\
+     \textbf{Practices:} Requirements Gathering, Test Planning, Technical Documentation, Agile, Jira $|$ \textbf{Spoken:} English, Spanish
+    }}
+ \end{itemize}
+
+\end{document}
